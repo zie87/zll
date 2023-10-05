@@ -1,0 +1,7 @@
+#ifndef ZLL_UTILS_MACROS_HPP
+#define ZLL_UTILS_MACROS_HPP
+
+#define ZLL_STRING_CONCAT(str1, str2) ZLL_STRING_CONCAT_SUB(str1, str2)
+#define ZLL_STRING_CONCAT_SUB(str1, str2) str1##str2
+
+#endif  // ZLL_UTILS_MACROS_HPP
