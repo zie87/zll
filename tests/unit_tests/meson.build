@@ -1,6 +1,7 @@
 
 unit_tests_srcs = [
     'meta/integral_constant_tests.cpp',
+    'meta/is_same_tests.cpp',
     'main.cpp',
 ]
 
