@@ -8,3 +8,5 @@ project(
 
 inc_dir = include_directories('include')
 dis_dep = declare_dependency(include_directories: inc_dir)
+
+subdir('tests')
