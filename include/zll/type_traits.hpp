@@ -16,6 +16,7 @@
 #include "zll/meta/is_floating_point.hpp"
 #include "zll/meta/is_integral.hpp"
 #include "zll/meta/is_member_pointer.hpp"
+#include "zll/meta/is_object.hpp"
 #include "zll/meta/is_pointer.hpp"
 #include "zll/meta/is_same.hpp"
 #include "zll/meta/is_scalar.hpp"

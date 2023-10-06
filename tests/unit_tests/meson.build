@@ -9,6 +9,7 @@ unit_tests_srcs = [
     'meta/is_floating_point_tests.cpp',
     'meta/is_integral_tests.cpp',
     'meta/is_member_pointer_tests.cpp',
+    'meta/is_object_tests.cpp',
     'meta/is_pointer_tests.cpp',
     'meta/is_same_tests.cpp',
     'meta/is_scalar_tests.cpp',
