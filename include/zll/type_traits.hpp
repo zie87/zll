@@ -12,6 +12,7 @@
 #include "zll/meta/is_arithmetic.hpp"
 #include "zll/meta/is_array.hpp"
 #include "zll/meta/is_class.hpp"
+#include "zll/meta/is_enum.hpp"
 #include "zll/meta/is_floating_point.hpp"
 #include "zll/meta/is_integral.hpp"
 #include "zll/meta/is_member_pointer.hpp"
