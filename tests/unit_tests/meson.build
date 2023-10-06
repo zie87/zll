@@ -1,5 +1,7 @@
 
 unit_tests_srcs = [
+    'memory/address_of_tests.cpp',
+    
     'meta/enable_if_tests.cpp',
     'meta/integral_constant_tests.cpp',
     'meta/is_arithmetic_tests.cpp',
