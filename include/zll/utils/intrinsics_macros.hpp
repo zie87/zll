@@ -8,5 +8,6 @@
 #define ZLL_UTILS_INTRINSICMACROS_HPP
 
 #define ZLL_INTRINSICS_IS_UNION(t) __is_union(t) 
+#define ZLL_INTRINSICS_IS_ENUM(t) __is_enum(t) 
 
 #endif // ZLL_UTILS_INTRINSICMACROS_HPP

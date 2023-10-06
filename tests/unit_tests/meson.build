@@ -5,6 +5,7 @@ unit_tests_srcs = [
     'meta/is_arithmetic_tests.cpp',
     'meta/is_array_tests.cpp',
     'meta/is_class_tests.cpp',
+    'meta/is_enum_tests.cpp',
     'meta/is_floating_point_tests.cpp',
     'meta/is_integral_tests.cpp',
     'meta/is_member_pointer_tests.cpp',
