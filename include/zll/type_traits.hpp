@@ -9,6 +9,7 @@
 
 #include "zll/meta/enable_if.hpp"
 
+#include "zll/meta/is_arithmetic.hpp"
 #include "zll/meta/is_array.hpp"
 #include "zll/meta/is_class.hpp"
 #include "zll/meta/is_floating_point.hpp"
