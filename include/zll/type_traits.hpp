@@ -9,6 +9,7 @@
 
 #include "zll/meta/enable_if.hpp"
 
+#include "zll/meta/is_class.hpp"
 #include "zll/meta/is_pointer.hpp"
 #include "zll/meta/is_same.hpp"
 #include "zll/meta/is_union.hpp"
