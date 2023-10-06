@@ -11,6 +11,7 @@ unit_tests_srcs = [
     'meta/is_member_pointer_tests.cpp',
     'meta/is_pointer_tests.cpp',
     'meta/is_same_tests.cpp',
+    'meta/is_scalar_tests.cpp',
     'meta/is_union_tests.cpp',
     'meta/remove_cv_tests.cpp',
     'main.cpp',
