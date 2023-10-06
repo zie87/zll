@@ -1,6 +1,7 @@
 
 unit_tests_srcs = [
     'meta/integral_constant_tests.cpp',
+    'meta/is_pointer_tests.cpp',
     'meta/is_same_tests.cpp',
     'meta/remove_cv_tests.cpp',
     'main.cpp',
@@ -14,4 +15,4 @@ unit_tests_exec = executable(
     dependencies: [utest_dep, dis_dep],
 )
 
-test('zll-unit-tests', unit_tests_exec, suite: 'dis')
+test('zll-unit-tests', unit_tests_exec, suite: 'zll')
