@@ -4,6 +4,7 @@ unit_tests_srcs = [
     'meta/integral_constant_tests.cpp',
     'meta/is_pointer_tests.cpp',
     'meta/is_same_tests.cpp',
+    'meta/is_union_tests.cpp',
     'meta/remove_cv_tests.cpp',
     'main.cpp',
 ]
