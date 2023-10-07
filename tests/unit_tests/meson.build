@@ -17,6 +17,9 @@ unit_tests_srcs = [
     'meta/is_scalar_tests.cpp',
     'meta/is_union_tests.cpp',
     'meta/remove_cv_tests.cpp',
+    
+    'numeric/ratio_tests.cpp',
+    
     'main.cpp',
 ]
 
