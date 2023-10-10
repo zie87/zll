@@ -4,8 +4,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISPOINTER_HPP
-#define ZLL_META_ISPOINTER_HPP
+#ifndef ZLL_META_TRAITS_ISPOINTER_HPP
+#define ZLL_META_TRAITS_ISPOINTER_HPP
 
 #include "zll/meta/integral_constant.hpp"
 
@@ -23,4 +23,4 @@ template<typename T> struct is_pointer<T* const volatile> : true_type {};
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISPOINTER_HPP
+#endif  // ZLL_META_TRAITS_ISPOINTER_HPP

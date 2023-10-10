@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_enum.hpp"
+#include "zll/meta/traits/is_enum.hpp"
 
 #include <utest.h>
 
@@ -14,7 +14,7 @@ struct test_struct {
 
 enum test_enum {};
 
-UTEST(meta_is_enum, is_enum) {
+UTEST(meta_traits_is_enum, is_enum) {
     ASSERT_TRUE(zll::meta::is_enum<test_enum>::value);
     ASSERT_TRUE(zll::meta::is_enum<test_struct::test_enum>::value);
 

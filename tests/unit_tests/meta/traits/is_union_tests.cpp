@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_union.hpp"
+#include "zll/meta/traits/is_union.hpp"
 
 #include <utest.h>
 
@@ -17,7 +17,7 @@ struct test_struct {
     test_union u;
 };
 
-UTEST(meta_is_union, is_union) {
+UTEST(meta_traits_is_union, is_union) {
     ASSERT_TRUE(zll::meta::is_union<test_union>::value);
     ASSERT_FALSE(zll::meta::is_union<test_struct>::value);
     ASSERT_FALSE(zll::meta::is_union<int>::value);

@@ -4,13 +4,13 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_array.hpp"
+#include "zll/meta/traits/is_array.hpp"
 
 #include <utest.h>
 
 struct test_struct {};
 
-UTEST(meta_is_array, is_array) {
+UTEST(meta_traits_is_array, is_array) {
     ASSERT_TRUE(zll::meta::is_array<int[]>::value);
     ASSERT_TRUE(zll::meta::is_array<char[4]>::value);
     ASSERT_TRUE(zll::meta::is_array<test_struct[]>::value);

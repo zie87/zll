@@ -4,9 +4,9 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/enable_if.hpp"
-#include "zll/meta/is_same.hpp"
-#include "zll/meta/is_pointer.hpp"
+#include "zll/meta/traits/enable_if.hpp"
+#include "zll/meta/traits/is_same.hpp"
+#include "zll/meta/traits/is_pointer.hpp"
 
 #include <utest.h>
 
@@ -29,7 +29,7 @@ typename zll::meta::enable_if<zll::meta::is_pointer<T>::value, test_types::test_
     return test_types::p;
 }
 
-UTEST(meta_enable_if, sfinae) {
+UTEST(meta_traits_enable_if, sfinae) {
     ASSERT_EQ(test_function<int>(), test_types::i);
     ASSERT_EQ(test_function<float>(), test_types::f);
     ASSERT_EQ(test_function<int*>(), test_types::p);

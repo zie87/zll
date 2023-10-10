@@ -4,11 +4,11 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISMEMBERPOINTER_HPP
-#define ZLL_META_ISMEMBERPOINTER_HPP
+#ifndef ZLL_META_TRAITS_ISMEMBERPOINTER_HPP
+#define ZLL_META_TRAITS_ISMEMBERPOINTER_HPP
 
 #include "zll/meta/integral_constant.hpp"
-#include "zll/meta/remove_cv.hpp"
+#include "zll/meta/traits/remove_cv.hpp"
 
 namespace zll {
 namespace meta {
@@ -29,4 +29,4 @@ struct is_member_pointer : detail::is_member_pointer_helper<typename remove_cv<T
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISMEMBERPOINTER_HPP
+#endif  // ZLL_META_TRAITS_ISMEMBERPOINTER_HPP

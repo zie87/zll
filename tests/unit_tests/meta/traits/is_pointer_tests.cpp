@@ -4,14 +4,14 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_pointer.hpp"
-#include "zll/meta/is_same.hpp"
+#include "zll/meta/traits/is_pointer.hpp"
+#include "zll/meta/traits/is_same.hpp"
 
 #include <utest.h>
 
 struct test_dummy {};
 
-UTEST(meta_is_pointer, is_pointer) {
+UTEST(meta_traits_is_pointer, is_pointer) {
     ASSERT_TRUE(zll::meta::is_pointer<test_dummy*>::value);
     ASSERT_TRUE(zll::meta::is_pointer<test_dummy const* volatile>::value);
     ASSERT_TRUE(zll::meta::is_pointer<void*>::value);

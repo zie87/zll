@@ -30,4 +30,4 @@ template<typename T> struct remove_cv<const volatile T> { typedef T type; };
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISSAME_HPP
+#endif  // ZLL_META_TRAITS_ISSAME_HPP

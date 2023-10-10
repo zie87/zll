@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_scalar.hpp"
+#include "zll/meta/traits/is_scalar.hpp"
 
 #include <utest.h>
 
@@ -14,7 +14,7 @@ struct test_struct {
 
 enum test_enum {};
 
-UTEST(meta_is_scalar, is_scalar) {
+UTEST(meta_traits_is_scalar, is_scalar) {
     ASSERT_TRUE(zll::meta::is_scalar<int>::value);
     ASSERT_TRUE(zll::meta::is_scalar<double>::value);
     ASSERT_TRUE(zll::meta::is_scalar<test_enum>::value);
@@ -22,6 +22,6 @@ UTEST(meta_is_scalar, is_scalar) {
     ASSERT_TRUE(zll::meta::is_scalar<int test_struct::*>::value);
 }
 
-UTEST(meta_is_scalar, is_not_scalar) {
+UTEST(meta_traits_is_scalar, is_not_scalar) {
     ASSERT_FALSE(zll::meta::is_scalar<test_struct>::value);
 }
