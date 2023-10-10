@@ -4,7 +4,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_class.hpp"
+#include "zll/meta/traits/is_class.hpp"
 
 #include <utest.h>
 
@@ -15,7 +15,7 @@ union test_union {
     class clazz {};
 };
 
-UTEST(meta_is_class, is_class) {
+UTEST(meta_traits_is_class, is_class) {
     ASSERT_TRUE(zll::meta::is_class<test_class>::value);
     ASSERT_TRUE(zll::meta::is_class<const test_class>::value);
     ASSERT_TRUE(zll::meta::is_class<test_struct>::value);

@@ -4,8 +4,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISFLOATINGPOINT_HPP
-#define ZLL_META_ISFLOATINGPOINT_HPP
+#ifndef ZLL_META_TRAITS_ISFLOATINGPOINT_HPP
+#define ZLL_META_TRAITS_ISFLOATINGPOINT_HPP
 
 #include "zll/meta/integral_constant.hpp"
 
@@ -27,4 +27,4 @@ template <> struct is_floating_point<double> : true_type {};
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISFLOATINGPOINT_HPP
+#endif  // ZLL_META_TRAITS_ISFLOATINGPOINT_HPP

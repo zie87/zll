@@ -4,13 +4,13 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_arithmetic.hpp"
+#include "zll/meta/traits/is_arithmetic.hpp"
 
 #include <utest.h>
 
 class test_class {};
 
-UTEST(meta_is_arithmetic, is_arithmetic) {
+UTEST(meta_traits_is_arithmetic, is_arithmetic) {
     ASSERT_TRUE(zll::meta::is_arithmetic<bool>::value);
     ASSERT_TRUE(zll::meta::is_arithmetic<char>::value);
     ASSERT_TRUE(zll::meta::is_arithmetic<const int>::value);
@@ -19,7 +19,7 @@ UTEST(meta_is_arithmetic, is_arithmetic) {
     ASSERT_TRUE(zll::meta::is_arithmetic<const volatile double>::value);
 }
 
-UTEST(meta_is_arithmetic, is_not_arithmetic) {
+UTEST(meta_traits_is_arithmetic, is_not_arithmetic) {
     ASSERT_FALSE(zll::meta::is_arithmetic<test_class>::value);
     ASSERT_FALSE(zll::meta::is_arithmetic<float&>::value);
     ASSERT_FALSE(zll::meta::is_arithmetic<double*>::value);

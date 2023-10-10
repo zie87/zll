@@ -4,19 +4,26 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISENUM_HPP
-#define ZLL_META_ISENUM_HPP
+#ifndef ZLL_META_TRAITS_ISARRAY_HPP
+#define ZLL_META_TRAITS_ISARRAY_HPP
 
-#include "zll/utils/intrinsics_macros.hpp"
 #include "zll/meta/integral_constant.hpp"
+
+#include <cstdlib>
 
 namespace zll {
 namespace meta {
 
 template <typename T>
-struct is_enum : bool_constant<ZLL_INTRINSICS_IS_ENUM(T)> {};
+struct is_array : false_type {};
+
+template <typename T>
+struct is_array<T[]> : true_type {};
+
+template <typename T, std::size_t N>
+struct is_array<T[N]> : true_type {};
 
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISENUM_HPP
+#endif  // ZLL_META_TRAITS_ISARRAY_HPP

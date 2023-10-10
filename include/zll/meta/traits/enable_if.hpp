@@ -4,21 +4,21 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISSAME_HPP
-#define ZLL_META_ISSAME_HPP
-
-#include "zll/meta/integral_constant.hpp"
+#ifndef ZLL_META_TRAITS_ENABLEIF_HPP
+#define ZLL_META_TRAITS_ENABLEIF_HPP
 
 namespace zll {
 namespace meta {
 
-template <typename T, typename U>
-struct is_same : false_type {};
+template <bool, typename = void>
+struct enable_if {};
 
 template <typename T>
-struct is_same<T, T> : true_type {};
+struct enable_if<true, T> {
+    typedef T type;
+};
 
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISSAME_HPP
+#endif  // ZLL_META_TRAITS_ENABLEIF_HPP

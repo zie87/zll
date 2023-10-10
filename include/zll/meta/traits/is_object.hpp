@@ -4,14 +4,14 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISOBJECT_HPP
-#define ZLL_META_ISOBJECT_HPP
+#ifndef ZLL_META_TRAITS_ISOBJECT_HPP
+#define ZLL_META_TRAITS_ISOBJECT_HPP
 
 #include "zll/meta/integral_constant.hpp"
-#include "zll/meta/is_array.hpp"
-#include "zll/meta/is_class.hpp"
-#include "zll/meta/is_scalar.hpp"
-#include "zll/meta/is_union.hpp"
+#include "zll/meta/traits/is_array.hpp"
+#include "zll/meta/traits/is_class.hpp"
+#include "zll/meta/traits/is_scalar.hpp"
+#include "zll/meta/traits/is_union.hpp"
 
 namespace zll {
 namespace meta {
@@ -23,4 +23,4 @@ struct is_object
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISOBJECT_HPP
+#endif  // ZLL_META_TRAITS_ISOBJECT_HPP

@@ -4,13 +4,13 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#include "zll/meta/is_floating_point.hpp"
+#include "zll/meta/traits/is_floating_point.hpp"
 
 #include <utest.h>
 
 class test_class {};
 
-UTEST(meta_is_floating_point, is_floating_point) {
+UTEST(meta_traits_is_floating_point, is_floating_point) {
     ASSERT_TRUE(zll::meta::is_floating_point<float>::value);
     ASSERT_TRUE(zll::meta::is_floating_point<const double>::value);
     ASSERT_TRUE(zll::meta::is_floating_point<volatile float>::value);

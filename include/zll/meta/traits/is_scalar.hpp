@@ -4,14 +4,14 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISSCALAR_HPP
-#define ZLL_META_ISSCALAR_HPP
+#ifndef ZLL_META_TRAITS_ISSCALAR_HPP
+#define ZLL_META_TRAITS_ISSCALAR_HPP
 
 #include "zll/meta/integral_constant.hpp"
-#include "zll/meta/is_arithmetic.hpp"
-#include "zll/meta/is_enum.hpp"
-#include "zll/meta/is_member_pointer.hpp"
-#include "zll/meta/is_pointer.hpp"
+#include "zll/meta/traits/is_arithmetic.hpp"
+#include "zll/meta/traits/is_enum.hpp"
+#include "zll/meta/traits/is_member_pointer.hpp"
+#include "zll/meta/traits/is_pointer.hpp"
 
 namespace zll {
 namespace meta {
@@ -23,4 +23,4 @@ struct is_scalar : bool_constant<is_arithmetic<T>::value || is_enum<T>::value ||
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISSCALAR_HPP
+#endif  // ZLL_META_TRAITS_ISSCALAR_HPP

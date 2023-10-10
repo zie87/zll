@@ -5,7 +5,7 @@
  */
 
 #include "zll/numeric/ratio.hpp"
-#include "zll/meta/is_same.hpp"
+#include "zll/meta/traits/is_same.hpp"
 
 #include <utest.h>
 

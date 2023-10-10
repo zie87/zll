@@ -4,8 +4,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISINTEGRAL_HPP
-#define ZLL_META_ISINTEGRAL_HPP
+#ifndef ZLL_META_TRAITS_ISINTEGRAL_HPP
+#define ZLL_META_TRAITS_ISINTEGRAL_HPP
 
 #include "zll/meta/integral_constant.hpp"
 
@@ -41,4 +41,4 @@ template <> struct is_integral<bool> : true_type {};
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISINTEGRAL_HPP
+#endif  // ZLL_META_TRAITS_ISINTEGRAL_HPP

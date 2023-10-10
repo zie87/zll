@@ -4,12 +4,12 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISARITHMETIC_HPP
-#define ZLL_META_ISARITHMETIC_HPP
+#ifndef ZLL_META_TRAITS_ISARITHMETIC_HPP
+#define ZLL_META_TRAITS_ISARITHMETIC_HPP
 
 #include "zll/meta/integral_constant.hpp"
-#include "zll/meta/is_floating_point.hpp"
-#include "zll/meta/is_integral.hpp"
+#include "zll/meta/traits/is_floating_point.hpp"
+#include "zll/meta/traits/is_integral.hpp"
 
 namespace zll {
 namespace meta {
@@ -20,4 +20,4 @@ struct is_arithmetic : bool_constant<is_integral<T>::value || is_floating_point<
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISARITHMETIC_HPP
+#endif  // ZLL_META_TRAITS_ISARITHMETIC_HPP

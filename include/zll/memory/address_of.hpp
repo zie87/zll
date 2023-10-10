@@ -7,8 +7,8 @@
 #ifndef ZLL_MEMORY_ADDRESSOF_HPP
 #define ZLL_MEMORY_ADDRESSOF_HPP
 
-#include "zll/meta/enable_if.hpp"
-#include "zll/meta/is_object.hpp"
+#include "zll/meta/traits/enable_if.hpp"
+#include "zll/meta/traits/is_object.hpp"
 #include "zll/utils/attribute_macros.hpp"
 
 namespace zll {

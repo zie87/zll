@@ -4,12 +4,12 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-#ifndef ZLL_META_ISCLASS_HPP
-#define ZLL_META_ISCLASS_HPP
+#ifndef ZLL_META_TRAITS_ISCLASS_HPP
+#define ZLL_META_TRAITS_ISCLASS_HPP
 
-#include "zll/meta/enable_if.hpp"
 #include "zll/meta/integral_constant.hpp"
-#include "zll/meta/is_union.hpp"
+#include "zll/meta/traits/enable_if.hpp"
+#include "zll/meta/traits/is_union.hpp"
 
 #include "zll/meta/detail/constraints_type.hpp"
 
@@ -36,4 +36,4 @@ struct is_class : bool_constant<(sizeof(detail::is_class_helper::test<T>(NULL)) 
 }  // namespace meta
 }  // namespace zll
 
-#endif  // ZLL_META_ISCLASS_HPP
+#endif  // ZLL_META_TRAITS_ISCLASS_HPP
