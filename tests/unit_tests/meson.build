@@ -18,6 +18,8 @@ unit_tests_srcs = [
     'meta/traits/is_union_tests.cpp',
     'meta/traits/remove_cv_tests.cpp',
     
+    'meta/types/typelist_tests.cpp',
+    
     'numeric/ratio_tests.cpp',
     
     'main.cpp',
