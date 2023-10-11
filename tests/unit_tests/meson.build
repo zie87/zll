@@ -19,6 +19,7 @@ unit_tests_srcs = [
     'meta/traits/remove_cv_tests.cpp',
     
     'meta/types/typelist_tests.cpp',
+    'meta/types/typevector_tests.cpp',
     
     'numeric/ratio_tests.cpp',
     
