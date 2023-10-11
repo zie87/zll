@@ -7,8 +7,12 @@
 #ifndef ZLL_META_TYPES_CONVERSION_HPP
 #define ZLL_META_TYPES_CONVERSION_HPP
 
+#include "zll/debug/static_assert.hpp"
+
 #include "zll/meta/types/typelist.hpp"
 #include "zll/meta/types/typevector.hpp"
+
+#include "zll/cstdint.hpp"
 
 namespace zll {
 namespace meta {
@@ -39,6 +43,46 @@ struct to_typelist<
                        T20>
         vector_type;
     typedef typename detail::to_typelist_helper<vector_type, 0, zll::meta::size<vector_type>::value>::type type;
+};
+
+}  // namespace meta
+}  // namespace zll
+
+namespace zll {
+namespace meta {
+
+namespace detail {
+
+template <typename>
+struct to_typevector_helper;
+
+template <typename HEAD_T, typename TAIL_T>
+struct to_typevector_helper<typelist<HEAD_T, TAIL_T> > {
+    typedef typevector<HEAD_T> vector_type;
+    typedef typename append<vector_type, typename to_typevector_helper<TAIL_T>::type>::type type;
+};
+
+template <>
+struct to_typevector_helper<zll::meta::nil_type> {
+    typedef zll::meta::empty_type type;
+};
+}  // namespace detail
+
+template <typename>
+struct to_typevector;
+
+template <typename HEAD_T, typename TAIL_T>
+struct to_typevector<typelist<HEAD_T, TAIL_T> > {
+    typedef typelist<HEAD_T, TAIL_T> list_type;
+    static const zll::uint_fast32_t size = zll::meta::size<list_type>::value;
+    ZLL_STATIC_ASSERT( size <= 20 );
+
+    typedef typename detail::to_typevector_helper<list_type>::type type;
+};
+
+template <>
+struct to_typevector<zll::meta::nil_type> {
+    typedef typevector<> type;
 };
 
 }  // namespace meta

@@ -37,3 +37,30 @@ UTEST(meta_types_conversion, to_typelist) {
         ASSERT_TRUE((zll::meta::is_same<result_type, expected_type>::value));
     }
 }
+
+UTEST(meta_types_conversion, to_typevector) {
+    {
+        typedef zll::meta::nil_type list_type;
+        typedef zll::meta::typevector<> expected_type;
+
+        typedef zll::meta::to_typevector<list_type>::type result_type;
+
+        ASSERT_TRUE((zll::meta::is_same<result_type, expected_type>::value));
+    }
+    {
+        typedef zll::meta::make_typelist<int, short>::type list_type;
+        typedef zll::meta::typevector<int, short> expected_type;
+
+        typedef zll::meta::to_typevector<list_type>::type result_type;
+
+        ASSERT_TRUE((zll::meta::is_same<result_type, expected_type>::value));
+    }
+    {
+        typedef zll::meta::make_typelist<int, short, bool, float, short, int, char>::type list_type;
+        typedef zll::meta::typevector<int, short, bool, float, short, int, char> expected_type;
+
+        typedef zll::meta::to_typevector<list_type>::type result_type;
+
+        ASSERT_TRUE((zll::meta::is_same<result_type, expected_type>::value));
+    }
+}
