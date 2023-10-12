@@ -12,6 +12,7 @@
 #include "zll/meta/traits/is_arithmetic.hpp"
 #include "zll/meta/traits/is_array.hpp"
 #include "zll/meta/traits/is_class.hpp"
+#include "zll/meta/traits/is_const.hpp"
 #include "zll/meta/traits/is_enum.hpp"
 #include "zll/meta/traits/is_floating_point.hpp"
 #include "zll/meta/traits/is_integral.hpp"

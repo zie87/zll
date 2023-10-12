@@ -5,7 +5,6 @@
  */
 
 #include "zll/meta/traits/is_pointer.hpp"
-#include "zll/meta/traits/is_same.hpp"
 
 #include <utest.h>
 

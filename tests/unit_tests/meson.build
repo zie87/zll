@@ -7,6 +7,7 @@ unit_tests_srcs = [
     'meta/traits/is_arithmetic_tests.cpp',
     'meta/traits/is_array_tests.cpp',
     'meta/traits/is_class_tests.cpp',
+    'meta/traits/is_const_tests.cpp',
     'meta/traits/is_enum_tests.cpp',
     'meta/traits/is_floating_point_tests.cpp',
     'meta/traits/is_integral_tests.cpp',
