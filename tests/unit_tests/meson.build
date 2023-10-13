@@ -3,6 +3,8 @@ unit_tests_srcs = [
     'memory/address_of_tests.cpp',
     
     'meta/integral_constant_tests.cpp',
+    'meta/type_identity_tests.cpp',
+
     'meta/traits/enable_if_tests.cpp',
     'meta/traits/is_arithmetic_tests.cpp',
     'meta/traits/is_array_tests.cpp',
