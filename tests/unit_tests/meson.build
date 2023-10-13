@@ -1,5 +1,7 @@
 
 unit_tests_srcs = [
+    'functional/function_ref_tests.cpp',
+    
     'memory/address_of_tests.cpp',
     
     'meta/integral_constant_tests.cpp',
