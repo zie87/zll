@@ -12,7 +12,7 @@
 namespace zll {
 namespace meta {
 
-template <typename HEAD_T, typename TAIL_T>
+template <typename HEAD_T, typename TAIL_T = nil_type>
 struct typelist {
     typedef HEAD_T head_type;
     typedef TAIL_T tail_type;
